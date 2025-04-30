@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 200px 1fr 100px;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  header input {
+    width: 60%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  header .perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .historias {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  .historias img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .post {
+    width: 500px;
+    margin-top: 2rem;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10PX;
+    justify-content: center;
+  }
+
+  .post img.perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .post-header .user {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .post img.post-img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+
+  .post .acciones {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .sidebar {
+    display: flex;
+    align-items:start;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .usuario, .sugerencias {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .usuario .perfil, .sugerencia .perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .sugerencia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    background-color: #222;
+    color: white;
+  }
