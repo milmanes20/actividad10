@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
   }
 
   body {
@@ -41,20 +41,27 @@
 
   main {
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 500px 200px;
+    gap: 1rem;
     padding: 2rem;
   }
 
-  .historias {
+  /*main{
     display: flex;
     justify-content: center;
-    width: 500px;
-    gap: 1rem;
+    gap: 2%;
+    padding: 2%;
+  }*/
+ 
+  .historias {
+    grid-column: 1/2 ;
+    grid-row: 1/2;
     padding: 1rem;
     background: white;
     border: 1px solid #ccc;
     border-radius: 10px;
+    background-color: red;
   }
 
   .historias img {
@@ -64,13 +71,15 @@
   }
 
   .post {
+    grid-column: 1/2; 
+    grid-row: 2/3;
     width: 500px;
     margin-top: 2rem;
     background: white;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10PX;
-    justify-content: center;
+    /*justify-content: center;*/
   }
 
   .post img.perfil {
@@ -97,24 +106,37 @@
     border-radius: 10px;
   }
 
-  .post .acciones {
+   .acciones {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
   }
 
-  .sidebar {
+ .sidebar {
     display: flex;
-    align-items:start;
+    align-items:start;/* agregado al original*/
     flex-direction: column;
     gap: 2rem;
   }
+
+  
 
   .usuario, .sugerencias {
     background: white;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 1rem;
+  }
+  .usuario{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .usuario-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
   }
 
   .usuario .perfil, .sugerencia .perfil {
@@ -123,12 +145,19 @@
     border-radius: 50%;
   }
 
-  .sugerencia {
+  .sugerencia{
+    grid-column: 2/3;
+    grid-row: 2/4;
+
+  }
+
+  .sugerencia-perfil {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 0.5rem;
   }
+
 
   footer {
     text-align: center;
