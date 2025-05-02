@@ -5,15 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>InstaFront</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <header>
-    <h1>InstaFront</h1>
-    <input type="text" placeholder="Buscador...">
-    <img src="./img/perfil.png" alt="perfil" class="perfil">
-  </header>
+  <div class="header-grid">
+    <header>
+      <h1>InstaFront</h1>
+      <input type="text" placeholder="Buscador...">
+      <img src="./img/perfil.png" alt="perfil" class="perfil">
+    </header>
+  </div>  
 
   <main>
+   
       <div class="historias">
         <img src="./img/perfil.png" alt="historia">
         <img src="./img/perfil.png" alt="historia">
@@ -32,10 +39,11 @@
         </div>
         <img src="./img/perfil.png" alt="post" class="post-img">
         <div class="acciones">
-          ❤️ 💬 ✈️ 🔖
+          ❤️ 💬 ✈️ 😊
         </div>
         <p><strong>Les gusta a luli.prigges y otras personas</strong></p>
-        <p><small>Ver los 3.672 comentarios</small></p>
+         
+         <a href="#"> <small>Ver los 3.672 comentarios</small> </a>
         <p><strong>Gabriela Munich:</strong> ¡Hola! Qué placer verte en frontend!!!</p>
         <p><strong>Jonathan Gonzalez:</strong> ¡Te estábamos esperando! Vamooh!</p>
       </div>
@@ -43,7 +51,7 @@
   
       <div class="usuario">
         <div class="usuario-perfil">
-          <img src="perfil.jpg" class="perfil">
+          <img src="./img/perfil.png" class="perfil">
           <div>
             <p><strong>abril.gonzalez53</strong></p>
             <p>A B R I L</p>
@@ -57,20 +65,24 @@
       <div class="sugerencias">
         <p><strong>Sugerencias para ti</strong></p>
         <div class="sugerencia-perfil">
-          <img src="" class="perfil">
-          <span>Jonathan Gonzalez</span>
+          <img src="./img/perfil.png" class="perfil">
+        
+          <p>Jonathan Gonzalez</p>
           <a href="#">Seguir</a>
         </div>
         <div class="sugerencia-perfil">
-          <img src="perfil.jpg" class="perfil">
-          <span>Gabriela Munich</span>
+          <img src="./img/perfil.png" class="perfil">
+          
+          <p>Gabriela Munich</p>
           <a href="#">Seguir</a>
         </div>
       </div>
   </main>
-
+ <div class="footer-grid">
   <footer>
     Todos los derechos reservados a MARCO CASTILLO CABRERA
   </footer>
-</body>
+
+ </div>
+  </body>
 </html>
